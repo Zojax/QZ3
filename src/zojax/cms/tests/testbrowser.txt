@@ -1,0 +1,111 @@
+Initial settings
+----------------
+
+    >>> from zope.testbrowser.testing import Browser
+
+    >>> admin = Browser()
+    >>> admin.addHeader("Authorization", "Basic mgr:mgrpw")
+    >>> admin.handleErrors = False
+
+    >>> user = Browser()
+    >>> user.addHeader("Authorization", "Basic user:userpw")
+    >>> user.handleErrors = False
+
+    >>> anon = Browser()
+    >>> anon.handleErrors = False
+
+Check site
+
+    >>> anon.open("http://localhost:8080")
+    >>> anon.headers['STATUS']
+    '200 Ok'
+
+    >>> anon.open("http://localhost:8080/")
+    >>> print anon.contents
+    <!DOCTYPE html ...>
+    <html>
+    ...
+          No content has been created yet.
+    ...
+    </html>
+
+
+Check installed content and products
+------------------------------------
+
+Authenticators::
+
+    >>> admin.open('http://localhost:8080/settings/system/authentication/')
+
+    >>> admin.getLink(text='(Active)', index=0)
+    <Link text='(Active)' url='http://localhost:8080/settings/system/authentication/index.html?change_state=principal.users'>
+
+    >>> admin.getLink(text='(Active)', index=1)
+    <Link text='(Active)' url='http://localhost:8080/settings/system/authentication/index.html?cred_change_state=default.credentials'>
+
+Products::
+
+    >>> admin.open('http://localhost:8080/settings/product')
+
+Check Installed Products
+
+    >>> admin.getControl(name='products:list').options
+    ['blogger', 'zojax-contenttypes']
+
+Check link to blogger settings
+
+    >>> admin.getLink(url='http://localhost:8080/settings/product/blogger/')
+    <Link text='Product[IMG] Blogger' url='http://localhost:8080/settings/product/blogger/'>
+
+
+Portal settings
+---------------
+
+Create admin member::
+
+    >>> admin.open('http://localhost:8080/settings/principals/+principal.user/')
+    >>> admin.getControl(name='form.widgets.firstname').value = 'Super'
+    >>> admin.getControl(name='form.widgets.lastname').value = 'Admin'
+    >>> admin.getControl(name='form.widgets.login').value='admin@zojax.com'
+    >>> admin.getControl(name='form.widgets.password').value='V0qGfh0km'
+    >>> admin.getControl('Add').click()
+
+    >>> admin.url == 'http://localhost:8080/settings/principals/zojax.pf01/'
+    True
+
+    >>> admin.open('http://localhost:8080/settings/principals/zojax.pf01/membership/roles/index.html?membership.roles.widgets.roles.to=zope.Manager&membership.roles.widgets.roles-empty-marker=&membership.roles.widgets.roles%3Alist=zope.Manager&membership.roles.buttons.save=Save')
+
+    >>> admin.headers['STATUS']
+    '200 Ok'
+
+Check UI theme::
+
+    >>> admin.open('http://localhost:8080/settings/ui/portalskin')
+
+Sample Theme should be already set as default theme
+
+    >>> admin.getControl(name='form.widgets.skin:list').value
+    ['quick.theme.sample']
+
+    >>> anon.open("http://localhost:8080/")
+    >>> print anon.contents
+    <!DOCTYPE html ...
+    <html>
+    ...
+    ...<meta name="generator" content="Zojax CMS - http://zojax.com" />...
+    ...
+                Powered with <a href="https://github.com/Zojax/">Zojax CMS</a>
+    ...
+                Software by <a href="http://www.zojax.com" title="Visit Zojax site">Zojax</a>
+    ...
+    </html>
+
+Check wysiwyg-editor::
+
+    >>> admin.open('http://localhost:8080/settings/system/contenteditor/')
+
+TinyMCE should be already set as default editor
+
+    >>> admin.getControl(name='form.widgets.default_editor:list').value
+    ['tinymce']
+

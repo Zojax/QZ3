@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zojax="http://namespaces.zope.org/zojax"
+    i18n_domain="zojax.cms">
+
+    <include package="zope.app.file" />
+
+    <adapter
+        name="quick.project.portal"
+        factory=".config.ConfigurationPlugin"
+        />
+
+    <adapter
+        name="quick.project.site"
+        factory=".siteconfig.ConfigurationPlugin"
+        />
+
+    <include package=".event" />
+    <include package=".generations" />
+    <include package=".group" />
+    <include package=".page" />
+    <include package=".site" />
+    <include package=".space" />
+
+</configure>

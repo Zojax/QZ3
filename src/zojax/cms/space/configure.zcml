@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zojax="http://namespaces.zope.org/zojax"
+    i18n_domain="zojax.cms">
+
+    <class class="zojax.content.space.content.ContentSpace">
+        <implements interface="zojax.content.featured.interfaces.IContentFeaturable" />
+    </class>
+
+</configure>

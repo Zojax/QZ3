@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zojax="http://namespaces.zope.org/zojax"
+    i18n_domain="zojax.cms">
+
+    <class class="zojax.site.site.Site">
+        <implements interface="zojax.content.urlmapper.interfaces.IURLMappable" />
+    </class>
+
+</configure>

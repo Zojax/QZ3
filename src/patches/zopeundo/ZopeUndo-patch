@@ -1,0 +1,15 @@
+### Eclipse Workspace Patch 1.0
+#P quick.z3ext
+Index: ZopeUndo/Prefix.py
+===================================================================
+--- ZopeUndo/Prefix.py  (revision 117220)
++++ ZopeUndo/Prefix.py  (working copy)
+@@ -30,6 +30,8 @@
+         self.path = path_list
+
+     def __cmp__(self, o):
++        if o is None:
++            o = '/'
+         other_path = o.split('/')
+         if other_path and ' ' in other_path[-1]:
+             # don't include logged username in comparison

@@ -1,0 +1,44 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.cms">
+
+  <exclude package="zope.app.securitypolicy.browser" />
+
+  <include package="zojax.autoinclude" file="meta.zcml" />
+
+  <!--include package="zope.app.publisher" file="meta.zcml" />
+  <include package="zope.app.zcmlfiles" file="menus.zcml" /-->
+
+  <includeAllDependencies package="zojax.cms" extras="test" />
+
+  <interface
+      name="DefaultSkin"
+      interface="zojax.cms.tests.tests.IDefaultSkin"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <browser:defaultSkin name="DefaultSkin" />
+
+  <!--include package="zope.securitypolicy" file="meta.zcml" /-->
+
+  <securityPolicy component="zojax.security.securitypolicy.SecurityPolicy" />
+
+  <role id="zope.Anonymous" title="Everybody" />
+  <role id="zope.Manager" title="Site Manager" />
+  <role id="zope.Member" title="Site Member" />
+
+  <grant permission="zope.View" role="zope.Anonymous" />
+  <grant permission="zope.app.dublincore.view" role="zope.Anonymous" />
+
+  <unauthenticatedPrincipal id="zope.anybody" title="Unauthenticated User" />
+
+  <principal id="zope.mgr" title="Manager" login="mgr" password="mgrpw" />
+  <principal id="zope.user" title="User" login="user" password="userpw" />
+
+  <everybodyGroup id="zope.Everybody" title="All Users" />
+
+  <grant role="zope.Manager" principal="zope.mgr" />
+  <grantAll role="zope.Manager" />
+
+</configure>

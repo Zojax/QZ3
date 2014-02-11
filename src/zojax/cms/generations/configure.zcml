@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="zojax.cms">
+
+    <utility
+        name="zojax.cms"
+        provides="zope.app.generations.interfaces.ISchemaManager"
+        component=".schemaManager"
+        />
+
+</configure>
