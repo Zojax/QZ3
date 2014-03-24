@@ -28,7 +28,9 @@
 /downloads/
 /eggs/
 /parts/
+/sandbox/
 /var/
+/zojax/
 
 # miscellaneous
 *.orig
