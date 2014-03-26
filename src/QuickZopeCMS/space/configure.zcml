@@ -1,9 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:zojax="http://namespaces.zope.org/zojax"
-    i18n_domain="zojax.cms">
+    i18n_domain="QuickZopeCMS">
 
-    <class class="zojax.contenttype.event.event.Event">
+    <class class="zojax.content.space.content.ContentSpace">
         <implements interface="zojax.content.featured.interfaces.IContentFeaturable" />
     </class>
 

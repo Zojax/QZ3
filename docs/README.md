@@ -1,18 +1,18 @@
-# zojax.cms
+# QuickZopeCMS
 
 
-`zojax.cms` is a Python web content management system and framework. It's built on
+`QuickZopeCMS` is a Python web content management system and framework. It's built on
 the Zope technologies to be very robust and flexible with pluggability in mind.
-The zope component architecture is used everywhere in `zojax.cms` so any component in
+The zope component architecture is used everywhere in `QuickZopeCMS` so any component in
 the system can be added or replaced.
 
 
-## Getting started with zojax.cms
+## Getting started with QuickZopeCMS
 
 
 [Setting up virtual machine](install/settingup.md)
 
-[Setting up zojax.cms](install/project.md)
+[Setting up QuickZopeCMS](install/project.md)
 
 
 ## Narrative documentation

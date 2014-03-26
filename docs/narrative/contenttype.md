@@ -1,7 +1,7 @@
 # Content types
 
 
-`zojax.cms` has its own content types system that allows to easily add new content
+`QuickZopeCMS` has its own content types system that allows to easily add new content
 types, automatically creating its forms, add menu items, etc.
 
 The package providing main content type creation features is ``zojax.content.type``.
@@ -382,7 +382,7 @@ It is registered as an unnamed adapter using zope ``adapter`` ZCML directive:
 #### Object-dependent name choosing
 
 Default zope name chooser mechanism allows to define only one name chooser per
-container, but in zojax.cms, you can provide several name choosers depending on type
+container, but in QuickZopeCMS, you can provide several name choosers depending on type
 of object that is being added to the container. To do that, you need to provide
 an adapter from (container, object) pair to the ``INameChooser`` interface.
 

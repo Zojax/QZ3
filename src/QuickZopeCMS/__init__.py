@@ -16,7 +16,7 @@ $Id$
 """
 
 from zope.i18nmessageid import MessageFactory
-_ = MessageFactory(u'zojax.cms')
+_ = MessageFactory(u'QuickZopeCMS')
 
 from z3c.schema.email import interfaces
 

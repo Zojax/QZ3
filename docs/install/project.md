@@ -1,4 +1,4 @@
-# Setting up zojax.cms
+# Setting up QuickZopeCMS
 
 
 Go to your virtual machine
@@ -11,7 +11,7 @@ Go to `zojax` folder
 
 Clone the project:
 
-    (box) $ git clone git@github.com:Zojax/zojax.cms.git quick.site
+    (box) $ git clone git@github.com:Zojax/QuickZopeCMS.git quick.site
 
     (box) $ cd quick.site
 

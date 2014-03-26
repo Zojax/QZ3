@@ -3,15 +3,15 @@ from setuptools import setup, find_packages
 version = '0.1'
 
 setup(
-    name = 'zojax.cms',
+    name = 'QuickZopeCMS',
     version = version,
-    description = "Zojax CMS",
+    description = "Quick Zope CMS",
     author = 'Dmitry Suvorov',
     author_email='suvdim@gmail.com',
     url = 'http://www.zojax.com',
     packages = find_packages('src'),
     package_dir = {'':'src'},
-    namespace_packages = ['zojax'],
+    #namespace_packages = ['zojax'],
     include_package_data = True,
     license='',
     zip_safe = False,

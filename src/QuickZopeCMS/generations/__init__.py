@@ -17,7 +17,7 @@ $Id$
 
 from zope.app.generations.generations import SchemaManager
 
-pkg = 'zojax.cms.generations'
+pkg = 'QuickZopeCMS.generations'
 
 schemaManager = SchemaManager(minimum_generation=0,
                               generation=0,
