@@ -1,7 +1,9 @@
 Overview
 ========
 
-QuickZopeCMS is a powerful and flexible python web content management system and framework. It's built on Zope technologies to be very robust and flexible with pluggability in mind. The zope component architecture is used everywhere in QuickZopeCMS so any component in the system can be added or replaced.
+QuickZopeCMS is a powerful and flexible python web content management system and framework. 
+It's a Zope3 based Internet & Intranet CMS. Commissioned & Designed by Quick. Developed and Supported by Zojax.
+It's built on Zope technologies to be very robust and flexible with pluggability in mind. The zope component architecture is used everywhere in QuickZopeCMS so any component in the system can be added or replaced.
 
 For detailed documentation please visit [docs folder](https://github.com/Zojax/QuickZopeCMS/docs)
 
