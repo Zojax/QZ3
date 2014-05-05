@@ -7,7 +7,7 @@ It's built on Zope technologies to be very robust and flexible with pluggability
 
 For detailed documentation please visit [docs folder](https://github.com/Zojax/QuickZopeCMS/docs)
 
-QuickZopeCMS is a good choise for medium to large projects, providing an intuitive interface for managing the following types of content:
+QuickZopeCMS is a good choice for medium to large projects, providing an intuitive interface for managing the following types of content:
 
 * standart web-pages
 * blog posts
