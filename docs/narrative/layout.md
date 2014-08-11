@@ -80,7 +80,7 @@ standard zope view templates (using ``ViewPageTemplateFile`` class from the
 
 
 If you want to provide some logic in the pagelet, such as getting needed values
-or processing some request arguments, you can provide a mix-in class. QuickZopeCMS
+or processing some request arguments, you can provide a mix-in class. QZ3
 pagelet system uses the update/render pattern, so pagelet classes have the
 "update" method that performs required actions, and the "render" method that
 does the rendering of pagelet.

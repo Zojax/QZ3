@@ -2,7 +2,7 @@
    xmlns="http://namespaces.zope.org/zope"
    xmlns:zojax="http://namespaces.zope.org/zojax"
    xmlns:browser="http://namespaces.zope.org/browser"
-   i18n_domain="QuickZopeCMS">
+   i18n_domain="QZ3">
 
   <exclude package="zope.app.securitypolicy.browser" />
 
@@ -11,11 +11,11 @@
   <!--include package="zope.app.publisher" file="meta.zcml" />
   <include package="zope.app.zcmlfiles" file="menus.zcml" /-->
 
-  <includeAllDependencies package="QuickZopeCMS" extras="test" />
+  <includeAllDependencies package="QZ3" extras="test" />
 
   <interface
       name="DefaultSkin"
-      interface="QuickZopeCMS.tests.tests.IDefaultSkin"
+      interface="QZ3.tests.tests.IDefaultSkin"
       type="zope.publisher.interfaces.browser.IBrowserSkinType" />
 
   <browser:defaultSkin name="DefaultSkin" />

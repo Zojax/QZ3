@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 version = '0.1'
 
 setup(
-    name = 'QuickZopeCMS',
+    name = 'QZ3',
     version = version,
     description = "Quick Zope CMS",
     author = 'Dmitry Suvorov',

@@ -1,6 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    i18n_domain="QuickZopeCMS">
+    i18n_domain="QZ3">
 
     <exclude package="zojax.ui.publicwidgets" file="contentactions.zcml" />
     <exclude package="zojax.content.activity" file="feeds.zcml" />

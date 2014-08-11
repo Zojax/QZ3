@@ -1,9 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:zojax="http://namespaces.zope.org/zojax"
-    i18n_domain="QuickZopeCMS">
+    i18n_domain="QZ3">
 
-    <class class="zojax.groups.group.Group">
+    <class class="zojax.contenttype.page.page.Page">
         <implements interface="zojax.content.featured.interfaces.IContentFeaturable" />
     </class>
 

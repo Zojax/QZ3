@@ -15,10 +15,14 @@
 $Id$
 """
 
-from zope.app.generations.generations import SchemaManager
+from zope.i18nmessageid import MessageFactory
+_ = MessageFactory(u'QZ3')
 
-pkg = 'QuickZopeCMS.generations'
+from z3c.schema.email import interfaces
 
-schemaManager = SchemaManager(minimum_generation=0,
-                              generation=0,
-                              package_name=pkg)
+
+class NotValidRFC822MailAdress(interfaces.NotValidRFC822MailAdress):
+    __doc__ = _("""Not a valid email address""")
+
+
+interfaces.NotValidRFC822MailAdress = NotValidRFC822MailAdress

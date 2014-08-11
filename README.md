@@ -1,13 +1,13 @@
 Overview
 ========
 
-QuickZopeCMS is a powerful and flexible python web content management system and framework. 
+QZ3 is a powerful and flexible python web content management system and framework.
 It's a Zope3 based Internet & Intranet CMS. Commissioned & Designed by Quick. Developed and Supported by Zojax.
-It's built on Zope technologies to be very robust and flexible with pluggability in mind. The zope component architecture is used everywhere in QuickZopeCMS so any component in the system can be added or replaced.
+It's built on Zope technologies to be very robust and flexible with pluggability in mind. The zope component architecture is used everywhere in QZ3 so any component in the system can be added or replaced.
 
-For detailed documentation please visit [docs folder](https://github.com/Zojax/QuickZopeCMS/docs)
+For detailed documentation please visit [docs folder](https://github.com/Zojax/QZ3/docs)
 
-QuickZopeCMS is a good choice for medium to large projects, providing an intuitive interface for managing the following types of content:
+QZ3 is a good choice for medium to large projects, providing an intuitive interface for managing the following types of content:
 
 * standart web-pages
 * blog posts
@@ -24,7 +24,7 @@ Features
 ========
 
 In addition to the usual features provided by Zope such as Zope Component Architecture, templating, code reuse caching and full-featured admin
-interface, QuickZopeCMS provides the following:
+interface, QZ3 provides the following:
 
 * WYSIWYG content editing using TinyMCE Editor with enriched functionality allowing to insert images and media from a user's PC and from YouTube and Wistia services
 * TTW Theme customization
@@ -41,23 +41,23 @@ interface, QuickZopeCMS provides the following:
 * Search engine
 * etc.
 
-QuickZopeCMS Screenshots
+QZ3 Screenshots
 ========================
 
-* QuickZopeCMS admin dashboard:
-![QuickZopeCMS admin dashboard](https://raw.githubusercontent.com/Zojax/QuickZopeCMS/master/docs/imgs/portalsettings.png)
+* QZ3 admin dashboard:
+![QZ3 admin dashboard](https://raw.githubusercontent.com/Zojax/QZ3/master/docs/imgs/portalsettings.png)
 
 * User's portal settings
-![User portal settings](https://raw.githubusercontent.com/Zojax/QuickZopeCMS/master/docs/imgs/userpreferencies.png)
+![User portal settings](https://raw.githubusercontent.com/Zojax/QZ3/master/docs/imgs/userpreferencies.png)
 
 * Add/edit a web-page form
-![Add/edit a web-page form](https://raw.githubusercontent.com/Zojax/QuickZopeCMS/master/docs/imgs/addwebpage.png)
+![Add/edit a web-page form](https://raw.githubusercontent.com/Zojax/QZ3/master/docs/imgs/addwebpage.png)
 
 
 Browser Support
 ===============
 
-QuickZopeCMS admin interface works with all modern browsers as well as user interface demo template.
+QZ3 admin interface works with all modern browsers as well as user interface demo template.
 
 Installation
 ============
@@ -159,7 +159,7 @@ Set up your email in Git:
 
         $ vagrant destroy
 
-## Setting up QuickZopeCMS
+## Setting up QZ3
 
 
 Go to your virtual machine
@@ -172,7 +172,7 @@ Go to `zojax` folder
 
 Clone the project:
 
-    (box) $ git clone git@github.com:Zojax/QuickZopeCMS.git quick.site
+    (box) $ git clone git@github.com:Zojax/QZ3.git quick.site
 
     (box) $ cd quick.site
 
@@ -218,8 +218,8 @@ You should  be able now to browse to  URL http://192.168.33.10:8080/ and log in 
 Contributing
 ============
 
-QuickZopeCMS is an open source project managed using  the Git version control systems. The repository is hosted on
- [GitHub](https://github.com/Zojax/QuickZopeCMS), so contributing is as
+QZ3 is an open source project managed using  the Git version control systems. The repository is hosted on
+ [GitHub](https://github.com/Zojax/QZ3), so contributing is as
 easy as forking the project on either of these sites and committing
 back your enhancements.
 
@@ -237,4 +237,4 @@ Support
 =======
 
 For all questions or comments, please  please send an email to 'contact@zojax.com'
-mailing list. To report a bug or other type of issue, please use the [GitHub issue tracker](https://github.com/Zojax/QuickZopeCMS/issues).
+mailing list. To report a bug or other type of issue, please use the [GitHub issue tracker](https://github.com/Zojax/QZ3/issues).

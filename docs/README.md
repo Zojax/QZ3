@@ -1,18 +1,18 @@
-# QuickZopeCMS
+# QZ3
 
 
-`QuickZopeCMS` is a Python web content management system and framework. It's built on
+`QZ3` is a Python web content management system and framework. It's built on
 the Zope technologies to be very robust and flexible with pluggability in mind.
-The zope component architecture is used everywhere in `QuickZopeCMS` so any component in
+The zope component architecture is used everywhere in `QZ3` so any component in
 the system can be added or replaced.
 
 
-## Getting started with QuickZopeCMS
+## Getting started with QZ3
 
 
 [Setting up virtual machine](install/settingup.md)
 
-[Setting up QuickZopeCMS](install/project.md)
+[Setting up QZ3](install/project.md)
 
 
 ## Narrative documentation
